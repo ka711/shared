@@ -75,15 +75,14 @@ with open('spkt_SAII_200mN.json', 'rb') as spkt_SAII02: spkt_SAII02 = json.load(
 with open('spkt_Ad_200mN.json', 'rb') as spkt_Ad02: spkt_Ad02 = json.load(spkt_Ad02)
 with open('spkt_C_200mN.json', 'rb') as spkt_C02: spkt_C02 = json.load(spkt_C02)
 
-# cells.PKCRule['conds'] = {'cellType': 'PKC', 'cellModel': '_PKC'}
-# cells.PKC02Rule['conds'] = {'cellType': 'PKC02', 'cellModel': '_PKC02'}
-# cells.INcellRule['conds'] = {'cellType': 'IN', 'cellModel': '_IN' }
-# cells.EXdelayedRule['conds'] = {'cellType': 'EXdl', 'cellModel': '_EXdl'}
-# cells.CRRule['conds'] = {'cellType': 'CR', 'cellModel': '_CR'}
-# cells.SOMRule['conds'] = {'cellType': 'SOM', 'cellModel': '_SOM'}
-# cells.EXinitialRule['conds'] = {'cellType': 'EXib', 'cellModel': '_EXib'}
-# cells.PROcellRule['conds'] = {'cellType': 'PRO', 'cellModel': '_PRO'}
-
+cells.PKCRule['conds'] = {'cellType': 'PKC'}
+cells.PKC02Rule['conds'] = {'cellType': 'PKC02'}
+cells.INcellRule['conds'] = {'cellType': 'IN'}
+cells.EXdelayedRule['conds'] = {'cellType': 'EXdl'}
+cells.CRRule['conds'] = {'cellType': 'CR'}
+cells.SOMRule['conds'] = {'cellType': 'SOM'}
+cells.EXinitialRule['conds'] = {'cellType': 'EXib'}
+cells.PROcellRule['conds'] = {'cellType': 'PRO'}
 cells.PROcellRule['secs']['soma']['threshold'] = 0
 
 netParams.cellParams['PKC'] = cells.PKCRule
